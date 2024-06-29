@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.bazan.countrywiki.presentation.pages.home.pages.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailScreenFragment"
+            app:destination="@id/detailScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailScreenFragment"
+        android:name="com.bazan.countrywiki.presentation.pages.detail.pages.DetailScreenFragment"
+        android:label="DetailScreenFragment" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+</navigation>

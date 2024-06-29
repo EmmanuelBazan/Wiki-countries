@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="14dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:paddingVertical="17dp">
+
+        <LinearLayout
+            android:id="@+id/layoutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/commonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Nombre comun)"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"/>
+
+            <TextView
+                android:id="@+id/officialName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Nombre oficial)"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgFlag"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

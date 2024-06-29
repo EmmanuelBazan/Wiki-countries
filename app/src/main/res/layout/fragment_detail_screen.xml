@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.pages.detail.pages.DetailScreenFragment"
+    android:orientation="vertical">
+
+    <include android:id="@+id/appBarDetail" layout="@layout/custom_app_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollIndicators="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/detailCommonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Nombre comun"/>
+
+            <TextView
+                android:id="@+id/detailOficialName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Nombre oficial"/>
+
+            <TextView
+                android:id="@+id/detailCapital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Nombre capital"/>
+
+            <TextView
+                android:id="@+id/detailContinente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Nombre continente"/>
+
+            <TextView
+                android:id="@+id/detailDescBandera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Descirpcion bandera"/>
+
+            <ImageView
+                android:id="@+id/imgEscudo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="mapa"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
